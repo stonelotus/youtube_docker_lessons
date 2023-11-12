@@ -12,6 +12,7 @@ app.use(express.json());
 
 async function initializeServer() {
   try {
+    console.log("Initializing server started.\nConnecting to MongoDB...");
     const client = await runMongo();
     console.log("Connected to MongoDB. Starting the server...");
 
